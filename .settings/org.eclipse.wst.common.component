@@ -7,6 +7,9 @@
         <dependent-module archiveName="zhonghui-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zhonghui-common/zhonghui-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="zhonghui-manager-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zhonghui-manager-pojo/zhonghui-manager-pojo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="zhonghui-portal"/>
         <property name="java-output-path" value="/zhonghui-portal/target/classes"/>
     </wb-module>

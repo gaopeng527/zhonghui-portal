@@ -16,4 +16,6 @@ public interface CartService {
 	
 	ZhonghuiResult addCartItem(long itemId, int num, HttpServletRequest request, HttpServletResponse response);
 	List<CartItem> getCartItemList(HttpServletRequest request, HttpServletResponse response);
+	ZhonghuiResult deleteCartItem(long itemId, HttpServletRequest request, HttpServletResponse response);
+	
 }

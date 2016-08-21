@@ -45,4 +45,10 @@ public class CartController {
 		model.addAttribute("cartList", cartList);
 		return "cart";
 	}
+	
+	@RequestMapping("/delete/{itemId}")
+	public String deleteCartItem(HttpServletRequest request, HttpServletResponse response, @PathVariable Long itemId){
+		cartService.deleteCartItem(itemId, request, response);
+		return "redirect:/cart/cart.html";
+	}
 }

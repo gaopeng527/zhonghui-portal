@@ -91,4 +91,13 @@ public class CartServiceImpl implements CartService {
 		return new ArrayList<>();
 	}
 
+	/**
+	 * 获取购物车商品信息
+	 */
+	@Override
+	public List<CartItem> getCartItemList(HttpServletRequest request, HttpServletResponse response) {
+		List<CartItem> itemList = getCartItemList(request);
+		return itemList;
+	}
+
 }

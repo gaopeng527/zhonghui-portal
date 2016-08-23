@@ -23,7 +23,7 @@ public class OrderServiceImpl implements OrderService {
 	
 	@Override
 	public String createOrder(Order order) {
-		// 调用taotao-order提供的服务提交订单
+		// 调用zhonghui-order提供的服务提交订单
 		String json = HttpClientUtil.doPostJson(ORDER_BASE_URL + ORDER_CREATE_URL, JsonUtils.objectToJson(order));
 		// 把json转换成ZhonghuiResult
 		ZhonghuiResult zhonghuiResult = ZhonghuiResult.format(json);
